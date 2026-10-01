@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Student Registration Form</title>
+    <title>Profile Page</title>
 
     <!-- Bootstrap 5 CSS -->
     <link
@@ -19,298 +19,94 @@
 
         <div class="row justify-content-center">
 
-            <div class="col-12 col-md-10 col-lg-8">
+            <div class="col-md-8 col-lg-6">
 
-                <div class="card border-0 shadow">
+                <!-- Profile Card -->
+                <div class="card shadow border-0">
 
                     <!-- Header -->
-                    <div class="card-header bg-primary text-white text-center py-4">
-                        <h2 class="mb-1">Student Registration</h2>
-                        <p class="mb-0">
-                            Please fill in your details
+                    <div class="card-body text-center">
+
+                        <!-- Profile Image -->
+                        <img
+                            src="images/1.jpeg"
+                            class="rounded-circle mb-3"
+                            width="150"
+                            height="150"
+                            alt="Profile"
+                        >
+
+                        <!-- Name -->
+                        <h2 class="card-title mb-1">
+                            Rahul Kumar
+                        </h2>
+
+                        <p class="text-muted">
+                            DevOps Engineer
                         </p>
-                    </div>
 
-                    <div class="card-body p-4 p-md-5">
+                        <!-- About -->
+                        <p class="card-text">
+                            Passionate DevOps engineer interested in Linux,
+                            Docker, Kubernetes, AWS and CI/CD.
+                        </p>
 
-                        <form>
+                        <!-- Buttons -->
+                        <div class="mb-4">
+                            <button class="btn btn-primary">
+                                Follow
+                            </button>
 
-                            <!-- Personal Information -->
-                            <h5 class="text-primary mb-3">
-                                Personal Information
-                            </h5>
+                            <button class="btn btn-outline-secondary">
+                                Message
+                            </button>
+                        </div>
 
-                            <div class="row g-3">
+                        <hr>
 
-                                <!-- First Name -->
-                                <div class="col-12 col-md-6">
-                                    <label class="form-label">
-                                        First Name
-                                    </label>
+                        <!-- Skills -->
+                        <h5 class="text-start">Skills</h5>
 
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        placeholder="Enter first name"
-                                        required
-                                    >
+                        <div class="text-start mb-4">
+                            <span class="badge bg-primary">Linux</span>
+                            <span class="badge bg-success">Docker</span>
+                            <span class="badge bg-info text-dark">Kubernetes</span>
+                            <span class="badge bg-warning text-dark">AWS</span>
+                            <span class="badge bg-dark">Git</span>
+                            <span class="badge bg-danger">Jenkins</span>
+                        </div>
+
+                        <!-- Profile Information -->
+                        <div class="text-start">
+
+                            <div class="row mb-2">
+                                <div class="col-4 fw-bold">
+                                    Location
                                 </div>
-
-                                <!-- Last Name -->
-                                <div class="col-12 col-md-6">
-                                    <label class="form-label">
-                                        Last Name
-                                    </label>
-
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        placeholder="Enter last name"
-                                        required
-                                    >
+                                <div class="col-8">
+                                    India
                                 </div>
-
-                                <!-- Email -->
-                                <div class="col-12 col-md-6">
-                                    <label class="form-label">
-                                        Email Address
-                                    </label>
-
-                                    <input
-                                        type="email"
-                                        class="form-control"
-                                        placeholder="student@example.com"
-                                        required
-                                    >
-                                </div>
-
-                                <!-- Phone -->
-                                <div class="col-12 col-md-6">
-                                    <label class="form-label">
-                                        Phone Number
-                                    </label>
-
-                                    <input
-                                        type="tel"
-                                        class="form-control"
-                                        placeholder="Enter phone number"
-                                        required
-                                    >
-                                </div>
-
-                                <!-- Date of Birth -->
-                                <div class="col-12 col-md-6">
-                                    <label class="form-label">
-                                        Date of Birth
-                                    </label>
-
-                                    <input
-                                        type="date"
-                                        class="form-control"
-                                        required
-                                    >
-                                </div>
-
-                                <!-- Gender -->
-                                <div class="col-12 col-md-6">
-                                    <label class="form-label d-block">
-                                        Gender
-                                    </label>
-
-                                    <div class="form-check form-check-inline">
-                                        <input
-                                            class="form-check-input"
-                                            type="radio"
-                                            name="gender"
-                                            id="male"
-                                        >
-
-                                        <label
-                                            class="form-check-label"
-                                            for="male"
-                                        >
-                                            Male
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check form-check-inline">
-                                        <input
-                                            class="form-check-input"
-                                            type="radio"
-                                            name="gender"
-                                            id="female"
-                                        >
-
-                                        <label
-                                            class="form-check-label"
-                                            for="female"
-                                        >
-                                            Female
-                                        </label>
-                                    </div>
-                                </div>
-
                             </div>
 
-
-                            <!-- Academic Information -->
-                            <h5 class="text-primary mt-4 mb-3">
-                                Academic Information
-                            </h5>
-
-                            <div class="row g-3">
-
-                                <!-- Course -->
-                                <div class="col-12 col-md-6">
-                                    <label class="form-label">
-                                        Course
-                                    </label>
-
-                                    <select class="form-select" required>
-                                        <option selected disabled>
-                                            Select course
-                                        </option>
-
-                                        <option>BCA</option>
-                                        <option>BBA</option>
-                                        <option>B.Tech</option>
-                                        <option>MCA</option>
-                                        <option>MBA</option>
-                                    </select>
+                            <div class="row mb-2">
+                                <div class="col-4 fw-bold">
+                                    Email
                                 </div>
-
-                                <!-- Year -->
-                                <div class="col-12 col-md-6">
-                                    <label class="form-label">
-                                        Year
-                                    </label>
-
-                                    <select class="form-select" required>
-                                        <option selected disabled>
-                                            Select year
-                                        </option>
-
-                                        <option>First Year</option>
-                                        <option>Second Year</option>
-                                        <option>Third Year</option>
-                                        <option>Final Year</option>
-                                    </select>
+                                <div class="col-8">
+                                    rahul@example.com
                                 </div>
-
-                                <!-- Student ID -->
-                                <div class="col-12">
-                                    <label class="form-label">
-                                        Student ID
-                                    </label>
-
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        placeholder="Enter student ID"
-                                    >
-                                </div>
-
                             </div>
 
-
-                            <!-- Address -->
-                            <h5 class="text-primary mt-4 mb-3">
-                                Address
-                            </h5>
-
-                            <div class="row g-3">
-
-                                <div class="col-12">
-                                    <label class="form-label">
-                                        Address
-                                    </label>
-
-                                    <textarea
-                                        class="form-control"
-                                        rows="3"
-                                        placeholder="Enter your address"
-                                    ></textarea>
+                            <div class="row mb-2">
+                                <div class="col-4 fw-bold">
+                                    Experience
                                 </div>
-
-                                <div class="col-12 col-md-4">
-                                    <label class="form-label">
-                                        City
-                                    </label>
-
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        placeholder="City"
-                                    >
+                                <div class="col-8">
+                                    2 Years
                                 </div>
-
-                                <div class="col-12 col-md-4">
-                                    <label class="form-label">
-                                        State
-                                    </label>
-
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        placeholder="State"
-                                    >
-                                </div>
-
-                                <div class="col-12 col-md-4">
-                                    <label class="form-label">
-                                        PIN Code
-                                    </label>
-
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        placeholder="PIN Code"
-                                    >
-                                </div>
-
                             </div>
 
-
-
-
-                            <!-- Terms -->
-                            <div class="form-check mt-4">
-                                <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    id="terms"
-                                    required
-                                >
-
-                                <label
-                                    class="form-check-label"
-                                    for="terms"
-                                >
-                                    I agree to the terms and conditions.
-                                </label>
-                            </div>
-
-
-                            <!-- Buttons -->
-                            <div class="d-grid d-md-flex gap-2 justify-content-md-end mt-4">
-
-                                <button
-                                    type="reset"
-                                    class="btn btn-outline-secondary px-4"
-                                >
-                                    Reset
-                                </button>
-
-                                <button
-                                    type="submit"
-                                    class="btn btn-primary px-4"
-                                >
-                                    Register
-                                </button>
-
-                            </div>
-
-                        </form>
+                        </div>
 
                     </div>
                 </div>
@@ -320,11 +116,6 @@
         </div>
 
     </div>
-
-    <!-- Bootstrap JS -->
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-    </script>
 
 </body>
 </html>
