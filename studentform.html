@@ -1,38 +1,567 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Family</title>
 
     <!-- Bootstrap CSS -->
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet">
+
+    <style>
+
+        /* =========================
+           BODY
+        ========================= */
+
+        body {
+            background-color: #f5f7fa;
+        }
+
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        .navbar {
+            padding: 15px 0;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           FAMILY SECTION
+        ========================= */
+
+        .family-section {
+            padding: 50px 0;
+        }
+
+        .family-heading {
+            margin-bottom: 40px;
+        }
+
+        .family-heading h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #212529;
+        }
+
+        .family-heading p {
+            color: #6c757d;
+            font-size: 18px;
+        }
+
+
+        /* =========================
+           CARD
+        ========================= */
+
+        .family-card {
+            height: 100%;
+
+            background-color: white;
+
+            border: 1px solid #dee2e6;
+            border-radius: 15px;
+
+            overflow: hidden;
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+
+            transition: all 0.3s ease;
+        }
+
+
+        /* =========================
+           CARD HOVER
+        ========================= */
+
+        .family-card:hover {
+            transform: translateY(-10px);
+
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.20);
+
+            border-color: #0d6efd;
+        }
+
+
+        /* =========================
+           CARD HEADER
+        ========================= */
+
+        .family-card .card-header {
+            background-color: #0d6efd;
+
+            color: white;
+
+            text-align: center;
+
+            font-weight: bold;
+
+            padding: 12px;
+        }
+
+
+        /* =========================
+           CARD BODY
+        ========================= */
+
+        .family-card .card-body {
+            padding: 25px;
+
+            text-align: center;
+        }
+
+
+        /* =========================
+           PROFILE IMAGE
+        ========================= */
+
+        .profile-image {
+            width: 140px;
+            height: 140px;
+
+            border-radius: 50%;
+
+            object-fit: cover;
+
+            border: 5px solid #0d6efd;
+
+            margin-bottom: 20px;
+        }
+
+
+        /* =========================
+           CARD TITLE
+        ========================= */
+
+        .family-card .card-title {
+            font-size: 24px;
+
+            font-weight: bold;
+
+            color: #212529;
+
+            margin-bottom: 5px;
+        }
+
+
+        /* =========================
+           CARD SUBTITLE
+        ========================= */
+
+        .family-card .card-subtitle {
+            font-size: 16px;
+
+            color: #6c757d;
+
+            margin-bottom: 15px;
+        }
+
+
+        /* =========================
+           CARD TEXT
+        ========================= */
+
+        .family-card .card-text {
+            color: #555;
+
+            line-height: 1.6;
+
+            margin-bottom: 20px;
+        }
+
+
+        /* =========================
+           CARD LINK
+        ========================= */
+
+        .family-card .card-link {
+            color: #0d6efd;
+
+            text-decoration: none;
+
+            margin: 0 8px;
+        }
+
+        .family-card .card-link:hover {
+            text-decoration: underline;
+        }
+
+
+        /* =========================
+           CARD FOOTER
+        ========================= */
+
+        .family-card .card-footer {
+            background-color: #f8f9fa;
+
+            border-top: 1px solid #dee2e6;
+
+            text-align: center;
+
+            padding: 12px;
+
+            color: #6c757d;
+        }
+
+
+        /* =========================
+           BUTTON
+        ========================= */
+
+        .profile-btn {
+            background-color: #0d6efd;
+
+            color: white;
+
+            border: none;
+
+            padding: 10px 20px;
+
+            border-radius: 8px;
+
+            text-decoration: none;
+
+            display: inline-block;
+
+            transition: 0.3s;
+        }
+
+        .profile-btn:hover {
+            background-color: #084298;
+
+            color: white;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        .main-footer {
+            background-color: #212529;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 20px;
+        }
+
+    </style>
+
 </head>
+
 
 <body>
 
-    <!-- Navbar -->
-    <nav
-     class="navbar navbar-dark bg-primary">
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+
+    <nav class="navbar navbar-dark bg-primary">
+
         <div class="container">
-            <a class="navbar-brand" href="#">My Family</a>
+
+            <a class="navbar-brand" href="#">
+                My Family
+            </a>
+
         </div>
+
     </nav>
 
-    <!-- Family Section -->
-  Our Family
- Meet the wonderful members of our family.
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p class="mb-0">© 2026 My Family</p>
+
+    <!-- =========================
+         FAMILY SECTION
+    ========================= -->
+
+    <section class="family-section">
+
+        <div class="container">
+
+
+            <!-- Heading -->
+
+            <div class="family-heading text-center">
+
+                <h1>
+                    Our Family
+                </h1>
+
+                <p>
+                    Meet the wonderful members of our family.
+                </p>
+
+            </div>
+
+
+            <!-- =========================
+                 CARDS ROW
+            ========================= -->
+
+            <div class="row g-4">
+
+
+                <!-- =========================
+                     MOTHER CARD
+                ========================= -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="family-card">
+
+                        <!-- Header -->
+
+                        <div class="card-header">
+                            Family Member
+                        </div>
+
+
+                        <!-- Body -->
+
+                        <div class="card-body">
+
+                            <img
+                                src="images/2.jpeg"
+                                class="profile-image"
+                                alt="Mother">
+
+
+                            <h5 class="card-title">
+                                Ankita
+                            </h5>
+
+
+                            <h6 class="card-subtitle">
+                                Mother
+                            </h6>
+
+
+                            <p class="card-text">
+                                She is a wonderful and caring
+                                member of our family.
+                            </p>
+
+
+                            <a href="#"
+                               class="profile-btn">
+                                View Profile
+                            </a>
+
+                        </div>
+
+
+                        <!-- Footer -->
+
+                        <div class="card-footer">
+                            Mother
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     FATHER CARD
+                ========================= -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="family-card">
+
+                        <div class="card-header">
+                            Family Member
+                        </div>
+
+
+                        <div class="card-body">
+
+                            <img
+                                src="images/2.jpeg"
+                                class="profile-image"
+                                alt="Father">
+
+
+                            <h5 class="card-title">
+                                Shailendra
+                            </h5>
+
+
+                            <h6 class="card-subtitle">
+                                Father
+                            </h6>
+
+
+                            <p class="card-text">
+                                He is the supportive and
+                                caring member of our family.
+                            </p>
+
+
+                            <a href="#"
+                               class="profile-btn">
+                                View Profile
+                            </a>
+
+                        </div>
+
+
+                        <div class="card-footer">
+                            Father
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     SON CARD
+                ========================= -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="family-card">
+
+                        <div class="card-header">
+                            Family Member
+                        </div>
+
+
+                        <div class="card-body">
+
+                            <img
+                                src="images/2.jpeg"
+                                class="profile-image"
+                                alt="Son">
+
+
+                            <h5 class="card-title">
+                                Samar
+                            </h5>
+
+
+                            <h6 class="card-subtitle">
+                                Son
+                            </h6>
+
+
+                            <p class="card-text">
+                                He is a cheerful and
+                                energetic member of our family.
+                            </p>
+
+
+                            <a href="#"
+                               class="profile-btn">
+                                View Profile
+                            </a>
+
+                        </div>
+
+
+                        <div class="card-footer">
+                            Son
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================
+                     DAUGHTER CARD
+                ========================= -->
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="family-card">
+
+                        <div class="card-header">
+                            Family Member
+                        </div>
+
+
+                        <div class="card-body">
+
+                            <img
+                                src="images/2.jpeg"
+                                class="profile-image"
+                                alt="Daughter">
+
+
+                            <h5 class="card-title">
+                                Sakshi
+                            </h5>
+
+
+                            <h6 class="card-subtitle">
+                                Daughter
+                            </h6>
+
+
+                            <p class="card-text">
+                                She is a lovely and
+                                cheerful member of our family.
+                            </p>
+
+
+                            <a href="#"
+                               class="profile-btn">
+                                View Profile
+                            </a>
+
+                        </div>
+
+
+                        <div class="card-footer">
+                            Daughter
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer class="main-footer">
+
+        <p class="mb-0">
+            © 2026 My Family
+        </p>
+
     </footer>
 
-    <!-- Bootstrap JS -->
+
+    <!-- Bootstrap JavaScript -->
+
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
     </script>
 
 </body>
+
 </html>
